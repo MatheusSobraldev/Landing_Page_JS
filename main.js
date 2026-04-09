@@ -136,10 +136,18 @@ function prepararMenuResponsivo() {
         return;
     }
 
+    function atualizarTextoBotaoMenu() {
+        botaoMenu.textContent = document.body.classList.contains('menu-aberto') ? 'Fechar Menu' : 'Abrir Menu';
+    }
+
+    atualizarTextoBotaoMenu();
+
     botaoMenu.addEventListener('click', function () {
         document.body.classList.toggle('menu-aberto');
-        botaoMenu.textContent = document.body.classList.contains('menu-aberto') ? 'Fechar Menu' : 'Abrir Menu';
+        atualizarTextoBotaoMenu();
     });
+
+    window.addEventListener('resize', atualizarTextoBotaoMenu);
 }
 
 function prepararBuscaGlobal() {
