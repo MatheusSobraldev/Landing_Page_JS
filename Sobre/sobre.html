@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sobre.css">
+</head>
+<body>
+<header>
+       <div class="container cabecalho">
+         <h1>Cabide Secreto</h1>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="../index.html">Início</a>
+                </li>
+                <li>
+                    <a href="../Sobre/sobre.html">Sobre</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="../Sobre/sobre.html#sobre-loja">Sobre a Loja</a>
+                        </li>
+                        <li>
+                            <a href="../Sobre/sobre.html#fundacao">Fundação</a>
+                        </li>
+                        <li>
+                            <a href="../Sobre/sobre.html#proprietarios">Proprietários</a>
+                        </li>
+                        <li>
+                            <a href="../Sobre/sobre.html#diferentes-estilos">Diferentes estilos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Produtos/produto.html">Produtos</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="../Produtos/produto.html#todos">Ver todos</a>
+                        </li>
+                        <li>
+                            <a href="../Produtos/produto.html#tenis">Tênis</a>
+                        </li>
+                        <li>
+                            <a href="../Produtos/produto.html#casaco">Casaco</a>
+                        </li>
+                        <li>
+                            <a href="../Produtos/produto.html#short">Short</a>
+                        </li>
+                        <li>
+                            <a href="../Produtos/produto.html#camisa">Camisa</a>
+                        </li>
+                    </ul>
+                </li>
+               <li>
+                    <a href="../Novidades/Novidade.html">Novidades</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="../Novidades/Novidade.html#prom">Promoções</a>
+                        </li>
+                        <li>
+                            <a href="../Novidades/Novidade.html#nov">Lançamentos</a>
+                        </li>
+                        <li>
+                            <a href="../Novidades/Novidade.html#soon">Em breve</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Contato/contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <form class="form-busca-global" data-produtos-path="../Produtos/produto.html">
+            <input type="text" name="busca" placeholder="Busque seu produto">
+            <button type="submit">Buscar</button>
+        </form>
+        <div class="acoes-header">
+            <a href="#" aria-label="Perfil">
+                <img src="../icons/perfil.svg" alt="Perfil">
+            </a>
+            <a href="#" aria-label="Carrinho" data-carrinho>
+                <img src="../icons/carrinho.svg" alt="Carrinho">
+            </a>
+        </div>
+       </div>
+       <div class="botao-menu">
+        <button type="button">Abrir Menu</button>
+    </div>
+    </header>
+    <main class="container conteudo">
+        <section class="secao-sobre secao-sobre-invertida" id="sobre-loja">
+            <img src="./imagens/Sobre%20a%20Loja.png" alt="Sobre a Loja">
+            <div class="texto-sobre">
+                <h2>Sobre a Loja</h2>
+                <h3>Como começou</h3>
+                <p>
+                    O Cabide Secreto nasceu da vontade de reunir peças bonitas, confortáveis e acessíveis em um só lugar. A ideia sempre foi criar uma loja simples de encontrar, fácil de escolher e feita para quem gosta de se vestir bem no dia a dia.
+                </p>
+                <h3>Nossos valores</h3>
+                <p>
+                    Valorizamos atendimento cuidadoso, qualidade nas escolhas, preços justos e uma experiência de compra prática. Cada peça é pensada para combinar estilo, conforto e personalidade.
+                </p>
+                <h3>Público-alvo</h3>
+                <p>
+                    Nosso público é formado por pessoas que buscam roupas versáteis para diferentes momentos: trabalho, estudos, passeios, treinos e ocasiões casuais.
+                </p>
+            </div>
+        </section>
+
+        <section class="secao-sobre" id="fundacao">
+            <img src="./imagens/Fundacao.jpg" alt="Fundacao da loja">
+            <div class="texto-sobre">
+                <h2>Fundação</h2>
+                <p>
+                    O Cabide Secreto foi fundado em 2026 com o objetivo de inovar o mercado de roupas, trazendo estilos modernos, combinações criativas e ideias geniais de conjuntos para o dia a dia.
+                </p>
+                <p>
+                    A empresa nasceu com a proposta de facilitar a escolha de looks, unindo conforto, qualidade e personalidade. Nosso foco é oferecer peças que ajudem cada cliente a montar combinações práticas, estilosas e diferentes do comum, sempre acompanhando novas tendências e necessidades dos consumidores.
+                </p>
+            </div>
+        </section>
+
+        <section class="secao-sobre secao-sobre-invertida" id="diferentes-estilos">
+            <img src="./imagens/Novidades.png" alt="Novidades da loja">
+            <div class="texto-sobre">
+                <h2>Diferentes estilos</h2>
+                <p>
+                    O Cabide Secreto também trabalha com diferentes estilos para atender gostos variados. Nossa loja traz opções casuais, esportivas e peças mais arrumadas, ajudando cada cliente a encontrar combinações que tenham a ver com sua rotina.
+                </p>
+                <p>
+                    A cada novidade, buscamos trazer produtos que deixem o guarda-roupa mais completo, moderno e fácil de usar.
+                </p>
+            </div>
+        </section>
+
+        <section class="proprietarios" id="proprietarios">
+            <div class="titulo-proprietarios">
+                <h2>Proprietários</h2>
+            </div>
+            <div class="lista-proprietarios">
+                <article>
+                    <img src="./imagens/Matheus.png" alt="Matheus">
+                    <div>
+                        <h3>Matheus</h3>
+                        <strong>CEO</strong>
+                        <p>Responsável pela direção da empresa, pelas ideias principais da marca e pelas estratégias de crescimento do Cabide Secreto.</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./imagens/Felipe.png" alt="Felipe">
+                    <div>
+                        <h3>Felipe</h3>
+                        <strong>Software Developer</strong>
+                        <p>Responsável pelo desenvolvimento das funcionalidades digitais da loja, melhorando a navegação, o carrinho e a experiência online dos clientes.</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./imagens/Carine.png" alt="Carine">
+                    <div>
+                        <h3>Carine</h3>
+                        <strong>Solutions Architect</strong>
+                        <p>Planeja soluções para organizar os processos da loja, conectando tecnologia, atendimento e crescimento da marca.</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./imagens/Paulo.png" alt="Paulo">
+                    <div>
+                        <h3>Paulo</h3>
+                        <strong>Product Manager</strong>
+                        <p>Coordena a escolha dos produtos, acompanha as necessidades dos clientes e ajuda a definir prioridades para novas coleções.</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./imagens/Fabianne.png" alt="Fabianne">
+                    <div>
+                        <h3>Fabianne</h3>
+                        <strong>Estilista</strong>
+                        <p>Cria ideias de conjuntos, acompanha tendências e contribui para que as peças tenham identidade, estilo e harmonia.</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./imagens/Beny.png" alt="Beny">
+                    <div>
+                        <h3>Beny</h3>
+                        <strong>Gerenciador de Projetos</strong>
+                        <p>Organiza etapas, acompanha prazos e ajuda a equipe a transformar as ideias da loja em melhorias práticas para os clientes.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script src="../main.js"></script>
+</body>
+</html>

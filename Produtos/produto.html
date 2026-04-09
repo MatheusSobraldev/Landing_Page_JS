@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="produto.css">
+</head>
+<body>
+<header>
+       <div class="container cabecalho">
+         <h1>Cabide Secreto</h1>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="../index.html">Início</a>
+                </li>
+                <li>
+                    <a href="../Sobre/sobre.html">Sobre</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="../Sobre/sobre.html#sobre-loja">Sobre a loja</a>
+                        </li>
+                        <li>
+                            <a href="../Sobre/sobre.html#fundacao">Fundação</a>
+                        </li>
+                        <li>
+                            <a href="../Sobre/sobre.html#proprietarios">Proprietários</a>
+                        </li>
+                        <li>
+                            <a href="../Sobre/sobre.html#diferentes-estilos">Diferentes estilos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Produtos/produto.html">Produtos</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#todos">Ver todos</a>
+                        </li>
+                        <li>
+                            <a href="#tenis">Tênis</a>
+                        </li>
+                        <li>
+                            <a href="#casaco">Casaco</a>
+                        </li>
+                        <li>
+                            <a href="#short">Short</a>
+                        </li>
+                        <li>
+                            <a href="#camisa">Camisa</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Novidades/Novidade.html">Novidades</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="../Novidades/Novidade.html#prom">Promoções</a>
+                        </li>
+                        <li>
+                            <a href="../Novidades/Novidade.html#nov">Lançamentos</a>
+                        </li>
+                        <li>
+                            <a href="../Novidades/Novidade.html#soon">Em breve</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Contato/contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <form class="form-busca-global" data-produtos-path="produto.html">
+            <input id="campo-busca" type="text" placeholder="Busque seu produto">
+            <button id="botao-busca" type="button">Buscar</button>
+        </form>
+        <div class="acoes-header">
+            <a href="#" aria-label="Perfil">
+                <img src="../icons/perfil.svg" alt="Perfil">
+            </a>
+            <button class="botao-carrinho" type="button" aria-label="Abrir carrinho" data-carrinho>
+                <img src="../icons/carrinho.svg" alt="Carrinho">
+            </button>
+        </div>
+    </div>
+    <div class="botao-menu">
+        <button type="button">Abrir Menu</button>
+    </div>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section>
+                <div class="titulo-produtos">
+                    <h2>Produtos</h2>
+                </div>
+                <nav class="nav-tabs">
+                    <button class="tab-link ativo" type="button" data-categoria="todos">Todos</button>
+                    <button class="tab-link" type="button" data-categoria="tenis">Tênis</button>
+                    <button class="tab-link" type="button" data-categoria="casaco">Casaco</button>
+                    <button class="tab-link" type="button" data-categoria="short">Short</button>
+                    <button class="tab-link" type="button" data-categoria="camisa">Camisa</button>
+                    <button class="tab-link" type="button" data-categoria="promocao">Promoção</button>
+                </nav>
+                <div class="produtos">
+                    <article class="produto" data-categoria="tenis" id="tenis">
+                    <a href="#">
+                        <img src="./Imagens/Tenis_corrida.jpg" alt="Tenis">
+                        <h3>Tênis de corrida</h3>
+                    </a>
+                        <p>
+                            Tênis de corrida leve e confortável, ideal para treinos e uso diário. Possui design moderno na cor rosa, com material respirável que ajuda na ventilação dos pés e solado que garante boa absorção de impacto.
+                        </p>
+                        <strong>R$400,00</strong>
+                        <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto" data-categoria="short" id="short">
+                    <a href="#">
+                        <img src="./Imagens/short.jpg" alt="Short">
+                        <h3>Short esporte fino</h3>
+                    </a>
+                    <p>
+                        Short de moletom leve e confortável, ideal para dias quentes e momentos de descanso. Possui tecido macio, ótimo caimento e proporciona liberdade de movimento para o uso diário.
+                    </p>
+                    <strong>R$40,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto" data-categoria="casaco" id="casaco">
+                    <a href="#">
+                        <img src="./Imagens/casaco.jpg" alt="Casaco">
+                        <h3>Casaco corta vento</h3>
+                    </a>
+                    <p>Casaco corta vento leve e funcional, ideal para proteção contra vento e mudanças climáticas. Possui design moderno, fechamento em zíper e ótimo ajuste ao corpo, garantindo conforto e praticidade para o dia a dia ou atividades ao ar livre.</p>
+                    <strong>R$ 120,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto" data-categoria="camisa" id="camisa">
+                    <a href="#">
+                        <img src="./Imagens/Camisa.jpg" alt="Camisa">
+                        <h3>Camisa de malha</h3>
+                    </a>
+                    <p>Camisa de malha leve e confortável, ideal para o uso diário. Produzida com tecido macio e respirável, proporciona bem-estar ao longo do dia sem abrir mão do estilo.</p>
+                    <strong>R$90,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto" data-categoria="casaco">
+                    <a href="#">
+                        <img src="./Imagens/Casaco_esportivo.jpg" alt="Casaco">
+                        <h3>Casaco Esportivo</h3>
+                    </a>
+                    <p>Casaco esportivo com visual moderno e confortável, perfeito para quem busca estilo e mobilidade. Conta com acabamento de qualidade, ótimo caimento e é ideal tanto para práticas esportivas quanto para compor looks casuais.</p>
+                    <strong>R$ 150,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto" data-categoria="casaco">
+                    <a href="#">
+                        <img src="./Imagens/Casaco_laranja.jpg" alt="Casaco">
+                        <h3>Casaco de chuva</h3>
+                    </a>
+                    <p>Casaco de chuva resistente e eficiente, desenvolvido para manter você seco mesmo em dias chuvosos. Com material impermeável e capuz, oferece proteção completa sem abrir mão do conforto e da leveza.</p>
+                    <strong>R$ 180,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto produto-promocao" data-categoria="casaco">
+                    <a href="#">
+                        <img src="./Imagens/Moletom.jpg" alt="Casaco">
+                        <h3>Casaco moletom</h3>
+                    </a>
+                    <p>Casaco de moletom macio e aconchegante, perfeito para dias frios. Possui excelente isolamento térmico, toque suave e design versátil, ideal para uso diário com muito conforto e estilo.</p>
+                    <del>R$400,00</del>
+                    <strong>R$ 200,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto" data-categoria="camisa">
+                    <a href="#">
+                        <img src="./Imagens/camisa_mangacomprida.jpg" alt="Camisa">
+                        <h3>Camisa de Manga Comprida</h3>
+                    </a>
+                    <p>Camisa de manga comprida com design moderno e versátil. Perfeita para dias mais frescos, oferece conforto térmico e combina facilmente com looks casuais ou mais arrumados.</p>
+                    <strong>R$100,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </article>
+                    <article class="produto produto-promocao" data-categoria="camisa">
+                    <a href="#">
+                        <img src="./Imagens/camisas_basicas.jpg" alt="Camisa">
+                        <h3>3 camisas basicas</h3>
+                    </a>
+                    <p>Kit com 3 camisas básicas essenciais para o dia a dia. Confortáveis e versáteis, são ideais para compor diferentes combinações, garantindo praticidade e ótimo custo-benefício.</p>
+                    <del>R$450,00</del>
+                    <strong>R$300,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto" data-categoria="camisa">
+                    <a href="#">
+                        <img src="./Imagens/Regata.jpg" alt="Camisa">
+                        <h3>Camisa Regata</h3>
+                    </a>
+                    <p>Camisa regata leve e fresca, ideal para dias quentes. Com design simples e confortável, proporciona liberdade de movimento e é perfeita para atividades físicas ou uso casual.</p>
+                    <strong>R$70,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto" data-categoria="tenis">
+                    <a href="#">
+                        <img src="./Imagens/Tenis_social.jpg" alt="Tenis">
+                        <h3>Sapato Social</h3>
+                    </a>
+                        <p>
+                            Sapato social na cor marrom, perfeito para quem busca elegância com conforto. Seu design sofisticado permite combinações com looks mais formais ou casuais, sendo ideal para diversas ocasiões.
+                        </p>
+                        <strong>R$400,00</strong>
+                        <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto" data-categoria="tenis">
+                    <a href="#">
+                        <img src="./Imagens/Tenis_airforce.jpg" alt="Tenis">
+                        <h3>Air force</h3>
+                    </a>
+                        <p>
+                            Tênis branco clássico, inspirado no estilo urbano e atemporal. Com acabamento de alta qualidade e visual versátil, é ideal para compor diferentes looks, garantindo conforto e estilo no dia a dia.
+                        </p>
+                        <strong>R$700,00</strong>
+                        <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto produto-promocao" data-categoria="tenis">
+                    <a href="#">
+                        <img src="./Imagens/Tenis_sneakers.jpg" alt="Tenis">
+                        <h3>Sneakers</h3>
+                    </a>
+                        <p>
+                        Tênis estilo sneakers moderno e despojado, perfeito para quem busca conforto com atitude. Possui design versátil que combina com diversas roupas, ideal para uso casual e cotidiano.
+                        </p>
+                        <del>R$650,00</del>
+                        <strong>R$400,00</strong>
+                        <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto" data-categoria="short">
+                    <a href="#">
+                        <img src="./Imagens/jeans.jpg" alt="Short">
+                        <h3>Calça jeans</h3>
+                    </a>
+                    <p>
+                        Calça jeans clássica e versátil, perfeita para qualquer ocasião. Com ótimo ajuste ao corpo e material resistente, combina facilmente com diversos estilos, do casual ao mais arrumado.   
+                    </p>
+                    <strong>R$250,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto" data-categoria="short">
+                    <a href="#">
+                        <img src="./Imagens/short_casual.jpg" alt="Short">
+                        <h3>Short casual</h3>
+                    </a>
+                    <p>
+                        Short casual moderno e prático, ideal para o dia a dia. Confeccionado com tecido leve, oferece conforto e estilo, sendo perfeito para passeios ou momentos descontraídos.
+                    </p>
+                    <strong>R$135,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto" data-categoria="short">
+                    <a href="#">
+                        <img src="./Imagens/short_jeans.jpg" alt="Short">
+                        <h3>Short jeans</h3>
+                    </a>
+                    <p>
+                        Short esporte fino com design elegante e sofisticado. Ideal para ocasiões que pedem um visual mais arrumado sem abrir mão do conforto, combinando perfeitamente com camisas ou polos.
+                    </p>
+                    <strong>R$200,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../main.js"></script>
+    <script src="produto.js"></script>
+</body>
+</html>

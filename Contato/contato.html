@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Cabide Secreto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header>
+       <div class="container cabecalho">
+         <h1>Cabide Secreto</h1>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="../index.html">Início</a>
+                </li>
+                <li>
+                    <a href="../Sobre/sobre.html">Sobre</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="../Sobre/sobre.html#sobre-loja">Sobre a loja</a>
+                        </li>
+                        <li>
+                            <a href="../Sobre/sobre.html#fundacao">Fundação</a>
+                        </li>
+                        <li>
+                            <a href="../Sobre/sobre.html#proprietarios">Proprietários</a>
+                        </li>
+                        <li>
+                            <a href="../Sobre/sobre.html#diferentes-estilos">Diferentes estilos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Produtos/produto.html">Produtos</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="../Produtos/produto.html#todos">Ver todos</a>
+                        </li>
+                        <li>
+                            <a href="../Produtos/produto.html#tenis">Tênis</a>
+                        </li>
+                        <li>
+                            <a href="../Produtos/produto.html#casaco">Casaco</a>
+                        </li>
+                        <li>
+                            <a href="../Produtos/produto.html#short">Short</a>
+                        </li>
+                        <li>
+                            <a href="../Produtos/produto.html#camisa">Camisa</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Novidades/Novidade.html">Novidades</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="../Novidades/Novidade.html#prom">Promoções</a>
+                        </li>
+                        <li>
+                            <a href="../Novidades/Novidade.html#nov">Lançamentos</a>
+                        </li>
+                        <li>
+                            <a href="../Novidades/Novidade.html#soon">Em breve</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Contato/contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <form class="form-busca-global" data-produtos-path="../Produtos/produto.html">
+            <input type="text" name="busca" placeholder="Busque seu produto">
+            <button type="submit">Buscar</button>
+        </form>
+        <div class="acoes-header">
+            <a href="#" aria-label="Perfil">
+                <img src="../icons/perfil.svg" alt="Perfil">
+            </a>
+            <a href="#" aria-label="Carrinho" data-carrinho>
+                <img src="../icons/carrinho.svg" alt="Carrinho">
+            </a>
+        </div>
+       </div>
+       <div class="botao-menu">
+        <button type="button">Abrir Menu</button>
+    </div>
+    </header>
+
+    <main class="container conteudo-contato">
+        <section class="titulo-contato">
+            <h2>Fale com a gente</h2>
+            <p>Envie sua mensagem para tirar dúvidas, falar sobre pedidos ou conhecer melhor o Cabide Secreto.</p>
+        </section>
+
+        <section class="area-contato">
+            <form id="form-contato" novalidate>
+                <div class="campo-form">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                    <small></small>
+                </div>
+                <div class="campo-form">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+                    <small></small>
+                </div>
+                <div class="campo-form">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                    <small></small>
+                </div>
+                <div class="campo-form">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto">
+                        <option value="">Escolha um assunto</option>
+                        <option value="pedido">Pedido</option>
+                        <option value="produto">Produto</option>
+                        <option value="troca">Troca ou devoluçao</option>
+                        <option value="parceria">Parceria</option>
+                    </select>
+                    <small></small>
+                </div>
+                <div class="campo-form campo-mensagem">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem"></textarea>
+                    <small></small>
+                </div>
+                <p class="mensagem-formulario"></p>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+
+            <aside class="info-contato">
+                <h3>Atendimento</h3>
+                <p>Segunda a sexta, das 9h às 18h.</p>
+                <p>Email: atendimento@cabidesecreto.com</p>
+                <p>WhatsApp: (11) 99999-9999</p>
+
+                <h3>Redes sociais</h3>
+                <div class="redes-sociais">
+                    <a href="#" aria-label="Instagram">
+                        <img src="./images/Instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <img src="./images/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="#" aria-label="Pinterest">
+                        <img src="./images/Pinterest.svg" alt="Pinterest">
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <img src="./images/whatsapp.svg" alt="WhatsApp">
+                    </a>
+                </div>
+
+                <h3>Parceiros</h3>
+                <ul class="parceiros">
+                    <li>Estúdio Moda Criativa</li>
+                    <li>Express Entregas</li>
+                    <li>Ateliê Urbano</li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <script src="../main.js"></script>
+    <script src="contato.js"></script>
+</body>
+</html>

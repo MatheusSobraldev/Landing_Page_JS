@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novidades - Cabide Secreto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="novidade.css">
+</head>
+<body>
+    <header>
+       <div class="container cabecalho">
+         <h1>Cabide Secreto</h1>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="../index.html">Início</a>
+                </li>
+                <li>
+                    <a href="../Sobre/sobre.html">Sobre</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="../Sobre/sobre.html#sobre-loja">Sobre a loja</a>
+                        </li>
+                        <li>
+                            <a href="../Sobre/sobre.html#fundacao">Fundação</a>
+                        </li>
+                        <li>
+                            <a href="../Sobre/sobre.html#proprietarios">Proprietários</a>
+                        </li>
+                        <li>
+                            <a href="../Sobre/sobre.html#diferentes-estilos">Diferentes estilos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Produtos/produto.html">Produtos</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="../Produtos/produto.html#todos">Ver todos</a>
+                        </li>
+                        <li>
+                            <a href="../Produtos/produto.html#tenis">Tênis</a>
+                        </li>
+                        <li>
+                            <a href="../Produtos/produto.html#casaco">Casaco</a>
+                        </li>
+                        <li>
+                            <a href="../Produtos/produto.html#short">Short</a>
+                        </li>
+                        <li>
+                            <a href="../Produtos/produto.html#camisa">Camisa</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Novidades/Novidade.html">Novidades</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#prom">Promoções</a>
+                        </li>
+                        <li>
+                            <a href="#nov">Lançamentos</a>
+                        </li>
+                        <li>
+                            <a href="#soon">Em breve</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Contato/contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <form class="form-busca-global" data-produtos-path="../Produtos/produto.html">
+            <input type="text" name="busca" placeholder="Busque seu produto">
+            <button type="submit">Buscar</button>
+        </form>
+        <div class="acoes-header">
+            <a href="#" aria-label="Perfil">
+                <img src="../icons/perfil.svg" alt="Perfil">
+            </a>
+            <a href="#" aria-label="Carrinho" data-carrinho>
+                <img src="../icons/carrinho.svg" alt="Carrinho">
+            </a>
+        </div>
+       </div>
+       <div class="botao-menu">
+        <button type="button">Abrir Menu</button>
+    </div>
+    </header>
+
+    <div class="container conteudo">
+        <main>
+            <section>
+                <div class="titulo-novidades">
+                    <h2>Novidades</h2>
+                </div>
+                <div class="topicos-novidades" id="prom">
+                    <article class="topico-novidade">
+                        <a href="../Produtos/produto.html#promocao">
+                            <img src="./image/Promocao.jpg" alt="Produtos em promocao">
+                        </a>
+                        <div>
+                            <span>Promoção</span>
+                            <h3>Produtos em promoção</h3>
+                            <p>
+                                Peças selecionadas com preços especiais para renovar o visual gastando menos.
+                            </p>
+                            <a class="botao-topico" href="../Produtos/produto.html#promocao">Ver promoções</a>
+                        </div>
+                    </article>
+                    <article class="topico-novidade" id="nov">
+                        <div class="imagens-duplas">
+                            <img src="./image/Tenis_airforce.jpg" alt="Tenis Air Force">
+                            <img src="./image/short_casual.jpg" alt="Short casual">
+                        </div>
+                        <div>
+                            <span>Lançamentos</span>
+                            <h3>Produtos novos</h3>
+                            <p>
+                                Novas opções de tênis e shorts chegaram para completar combinações casuais, confortaveis e modernas.
+                            </p>
+                            <a class="botao-topico" href="../Produtos/produto.html#todos">Conferir produtos</a>
+                        </div>
+                    </article>
+                    <article class="topico-novidade" id="soon">
+                        <div class="imagens-duplas">
+                            <img src="./image/blazers-hangers-second-hand-market.jpg" alt="Blazers">
+                            <img src="./image/vestidos.jpg" alt="Vestidos">
+                        </div>
+                        <div>
+                            <span>Em breve</span>
+                            <h3>Coleções em breve</h3>
+                            <p>
+                                Blazers e vestidos estão chegando para trazer novas possibilidades para estilos mais arrumados.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../main.js"></script>
+</body>
+</html>
