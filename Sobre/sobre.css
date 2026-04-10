@@ -395,6 +395,15 @@ header h1{
     line-height: 1.5;
 }
 
+.rodape{
+    margin-top: 56px;
+    padding: 20px;
+    background-color: #2E5283;
+    color: #fff;
+    text-align: center;
+    border-top: 2px solid #98DDDF;
+}
+
 @media (max-width: 900px) {
     header{
         padding: 16px;
